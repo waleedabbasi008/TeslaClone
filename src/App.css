@@ -1,4 +1,46 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;700&family=Bricolage+Grotesque&family=Delicious+Handrawn&family=Kablammo&family=Montserrat:ital,wght@0,300;0,500;0,700;1,400&family=Open+Sans&family=Poppins:wght@300;500;600&family=Roboto&family=Roboto+Mono:wght@200;300&family=Rubik+Spray+Paint&family=Rubik:wght@300;400&family=Sono:wght@800&family=Ysabeau+Infant:wght@300&family=Ysabeau+Office:wght@200;300&display=swap');
 
+* {
+    font-family: 'Rubik', sans-serif;
+    color: #393c41;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: #393c41;
+}
+@keyframes animateDown {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(10px);
+    }
+
+    60% {
+        transform: translateY(5px);
+    }
+}
+/* ***************************** For the responsive screens ************************************* */
+@media screen and (max-width: 600px) {
+    .btn-group{
+        display: flex;
+        flex-direction: column;
+    }
+    .down-key{
+        margin-left: 5rem;
+    }
+    
+}

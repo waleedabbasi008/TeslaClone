@@ -5,9 +5,9 @@ import App from './App';
 
 ReactDom.render(
    <>
-      <BrowserRouter>
-         <App />
-      </BrowserRouter>
+         <BrowserRouter>
+            <App />
+         </BrowserRouter>
    </>,
    document.getElementById("root")
 );
